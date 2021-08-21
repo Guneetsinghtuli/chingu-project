@@ -1,0 +1,28 @@
+//Default
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+    font-family: 'Raleway', sans-serif;
+}
+
+button{
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex($hor,$ver,$direc : "row") {
+    display: flex !important;
+    justify-content: $hor !important;
+    align-items: $ver !important;
+    flex-direction: $direc !important;
+    
+    
+}
+

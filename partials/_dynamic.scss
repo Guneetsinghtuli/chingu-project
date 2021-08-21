@@ -1,0 +1,15 @@
+
+//JavaScript added Dynamic Classes
+.display{
+    display: none;
+    transition: 200ms ease-out;
+}
+
+.background-transparent{
+    
+    background-color: white;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.3);
+    transition: 1000ms ease-in-out;
+    transition-delay: 100ms;
+
+}
