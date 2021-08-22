@@ -1,0 +1,140 @@
+//Features Section
+.two{
+    padding: 10px 120px;
+    .two-image{
+        width: 40%;
+    }
+    
+    div{
+        margin: 30px 0;
+    }
+    img{
+        width: 100%;
+        min-width: 250px;
+        height: auto;
+        max-height: 400px;
+        object-fit: contain;
+
+    }
+    //Info of every feature
+    .info{
+        @include flex(flex-start,flex-start,column );
+        padding: 10px 23px;
+        width: 60%;
+        line-height: 1.3;
+        h1{
+            font-size: 32px;
+            margin: 14px 0;
+            font-weight: 700;
+        }
+        a{
+            i{
+                margin: 0 6px;
+            }
+            font-size: 24px;
+            margin: 14px 0;
+            font-weight: 600;
+            color: black;
+            text-decoration: none;
+        }
+        .info-data{
+            color: #7a869a;
+            font-weight: 500;
+            font-size: 19px;
+        }
+        //Text that appears after clicking Learn More button
+        .hidden-content{
+            transition: 2000ms ease-out;
+            margin: 0;
+            padding: 0 20px;
+            font-size: 18px;
+            ul{
+                margin: 6px 44px;
+            }
+        }
+    }
+
+    //Common 
+    .card-head{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .help-team{
+        .container{
+            width: 50%;
+        }
+    }
+
+    //Features area
+    .the-board{
+        display: flex;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .no-code{
+        display: flex;
+    }
+    .power-ups{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    //Media Query 
+    @media (max-width:900px) {
+        padding: 10px 60px;
+    }
+    @media (max-width:768px) {
+        .features{
+            .the-board{
+                flex-direction: column;
+            }
+            .cards{
+                flex-direction: column;
+            }
+            .no-code{
+                flex-direction: column;
+            }
+            .power-ups{
+                flex-direction: column;
+            }
+        }
+        .info{
+            padding: 10px 16px;
+            width: 100% !important;
+            p{
+                font-size: 16px !important;
+            }
+            h1{
+                font-size: 20px !important;
+            }
+            a{
+                font-size: 18px !important;
+                
+            }
+            
+        }
+        .two-image{
+            width: 90% !important;
+            margin: auto;
+            
+        }
+        
+    }
+    @media (max-width:542px) {
+        padding: 0;
+        .help-team{
+            .info{
+                padding: 10px 16px;
+            }
+            .container{
+                width: 100%;
+            }
+        }
+        ul{
+            margin: 6px 0 !important;
+        }
+        
+    }
+}

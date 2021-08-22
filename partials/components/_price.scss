@@ -1,0 +1,87 @@
+//Pricing Section
+.three{
+    padding: 10px 90px;
+    .check-out{
+        padding: 22px;
+        display: flex;
+    }
+    .tag{
+        display: flex;
+        .tag-info{
+            margin: 0 20px;
+            h1{
+                font-size: 22px;
+                margin: 8px 0;
+            }
+            p{
+                font-size: 20px;
+                line-height: 1.5;
+                margin: 12px 0;
+            }
+            button{
+                padding: 6px;
+                color: #0065ff;
+                border: 2px solid #0065ff;
+                font-size: 16px;
+                min-width: 140px;
+                border-radius: 5px;
+                :hover{
+                    background-color: #0065ff;
+                    color: white;
+                }
+            }
+
+        }
+
+    }
+    .tour{
+        display: flex;
+        .tour-info{
+            margin: 0 20px;
+            h1{
+                font-size: 22px;
+                margin: 8px 0;
+            }
+            p{
+                font-size: 20px;
+                line-height: 1.5;
+                margin: 12px 0;
+            }
+            button{
+                padding: 6px;
+                color: #0065ff;
+                border: 2px solid #0065ff;
+                font-size: 16px;
+                min-width: 140px;
+                border-radius: 5px;
+            }
+        }
+
+    }
+    //Media Query 
+    @media (max-width:900px) {
+        .check-out img{
+            display: none;
+        }
+    }
+
+    @media (max-width:768px) {
+        .check-out{
+            flex-direction: column;
+        }
+        .tag{
+            margin: 20px 0;
+        }
+        .tour{
+            margin: 20px 0;
+        }
+    }
+   
+    @media (max-width:542px) {
+        padding: 10px 0;
+        .check-out{
+            padding: 12px 0;
+        }
+        
+    }
+}

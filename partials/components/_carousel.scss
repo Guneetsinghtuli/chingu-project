@@ -1,0 +1,91 @@
+//Carousel Section or Testimonials
+
+.carousel-container{
+    min-height: 400px;
+    background-color: #e6fcff;
+    // .carousel{
+    //     background-color: #e6fcff;
+    // }
+    
+    .carousel-inner{
+        padding: 3rem 15px;
+        margin: 0 auto;
+
+        .info{
+            @include flex(space-around,center);
+            width: 75%;
+            margin: auto;
+            .left{
+                margin-right: 40px;
+                width: 25%;
+                .left-upper-logo{
+                    margin-bottom: 20px;
+                }
+                .left-intro{
+                    h5,h3{
+                        margin: 0;
+                    }
+                }
+            }
+            .right{
+                width: 75%;
+                .right-footer{
+                    text-align: right;
+                }
+                .right-quote p{
+                    font-size: 32px;
+                }
+
+            }
+        }
+    }
+
+    //Images of Brands
+    .left-upper-logo{
+        height: 65px;
+        background-size: contain;
+        width: auto;
+        background-repeat: no-repeat;
+        background-image: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/customer-stories/4c529ec1377a131a1ae1772cb57b5ab2/ebay.svg);
+    }
+    .two{
+        background: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/customer-stories/92d313945b0328e62cd9968ea7026700/egencia.svg) !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+    }
+    .three{
+        background: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/customer-stories/2f3fc11945305a393eec0b6f8fe97531/detroit-red-wings.svg) !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+    }
+    .four{
+        background: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/customer-stories/f93e7c80e565d256f80d72ef924f18c8/sprout-social.svg) !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+    }
+    
+    //Media Query
+    @media (max-width:768px){
+        .info{
+            @include flex(center,center,column);
+            .right{
+                text-align: center;
+                .right-quote p{
+                    font-size: 20px;
+                }
+            }
+            .left{
+                width: 100% !important;
+                .left-intro{
+                    display: none;
+                }
+                .left-upper-logo{
+                    background-position: center;
+                    background-size: 40px 70px;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,103 @@
+//Hero Section
+
+.hero{
+    padding-top: 112px ;
+    background: linear-gradient(0deg, #fff, #eae6ff 100%);
+    
+   .hero-container{
+    @include flex(space-between,center);
+    width: 100%;
+    margin: auto;
+   }
+   //Text
+    .hero-text{
+        max-width: 740px !important;
+        padding: 0 0 0 85px;
+        margin-bottom: 100px;
+        //Hero Section heading
+        h1{
+            font-size: 50px;
+            font-weight: 600;
+        }
+        
+        p{
+            margin-bottom: 44px;
+            max-width: 600px;
+            font-size: 20px;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .hero-input{
+
+            input{
+                min-width: 370px;
+                background-color: white;
+                border: 1px solid gray;
+                padding: 9px 11px;
+                font-size: 20px;
+                border-radius: 4px;
+            }
+            button{
+                text-align: center;
+                min-width: 250px;
+                background-color: $primary-color;
+                color: white;
+                font-weight: 500;
+                padding: 10px;
+                font-size: 20px;
+                border-radius: 4px;
+            }
+        }
+    }
+    //Image
+    .hero-pic{
+
+        img{
+            width: 450px;
+            height: auto;
+        }
+    }
+
+    //Media Query of Hero
+    @media (max-width:950px) {
+        .hero-pic{
+            display: none;
+        }
+        .hero-container{
+            text-align: left;
+        }
+    }
+    @media (max-width:768px) {
+        .hero-input{
+            input{
+                display: none;
+            }
+            button{
+                width: 100%;
+            }
+        } 
+        .hero-container{
+            text-align: center;
+            .hero-text{
+                padding: 0 85px;
+            }
+        }
+    }
+    @media (max-width:542px) {
+        
+        .hero-container{
+            .hero-text{
+                padding: 0 12px;
+                h1{
+                    font-size: 32px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 18px;
+                }
+                
+            }
+        }
+    }
+}

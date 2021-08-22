@@ -1,0 +1,112 @@
+//Intro Section or the section below Hero
+.one{
+    margin: 40px 0;
+    .one-container{
+        @include flex(center,center,column);
+    }
+    //Text 
+    .one-text{
+        text-align: center;
+        width: 70%;
+        i{
+            margin: 0 6px;
+        }
+        h1{
+            margin: 20px 0;
+            font-size: 32px;
+        }
+        p{
+            margin: 24px 0 38px 0;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        button{
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px;
+            min-width: 140px;
+            color: #0065ff;
+            border-radius: 4px;
+            border: 2px solid #0065ff ;
+            background: transparent;
+            margin-bottom: 20px;
+        }
+    }
+    .one-image {
+        img{
+            width: 88vw;
+        }
+    }
+    //Social Area section 
+    .one-socials{
+        margin: 40px 0;
+        p{
+            font-size: 22px;
+            font-weight: 500;
+            text-align: center;
+        }
+        .socials{
+            text-align: center;
+            img{
+                margin: 22px 18px;
+            }
+        }
+    }
+
+    //Media Query 
+    @media (max-width:900px) {
+        .one-container{
+            margin: auto;
+            max-width: 650px;
+            @include flex(center,center,column )
+        }
+        
+    }
+    @media (max-width:768px) {
+        text-align: center;
+
+        .one-container{
+            margin: auto;
+            max-width: 550px;
+            @include flex(center,center,column )
+        }
+        .one-socials{
+            .socials{
+                @include flex(center,center)
+            }
+            .socials img{
+                text-align: left;
+                margin: 13px;
+                width: 20%;   
+            }
+        }
+        .one-image{
+            margin: 0;
+            padding: 0;
+        }
+        .one-image img{
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+    }
+    @media (max-width:542px) {
+        margin: 0;
+        .one-container .one-text{
+            width: 100%;
+            padding: 0 15px;
+            h1{
+                font-size: 22px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
+        .one-socials p{
+            font-size: 18px;
+            padding: 0 15px;
+        }   
+    }    
+}

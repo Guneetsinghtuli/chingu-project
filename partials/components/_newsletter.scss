@@ -1,0 +1,67 @@
+
+//Newsletter section
+.five{
+    padding: 40px 60px;
+    .newsletter{
+        text-align: center;
+        color: white;
+        min-height: 350px;
+        border-radius: 8px;
+        background: url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/sign-up/95ae6a1535b6504e3572dc7393a2d482/background.svg), linear-gradient(0deg, #4c9aff, #403294 100%);  
+        @include flex(center,center);      
+        .container{
+            padding: 0 160px;
+            line-height: 1.6;
+            h1{
+                font-weight: 600;
+                font-size: 28px;
+            }
+            .newsletter-buttons{
+                margin-top: 30px;
+                input{
+                    padding: 8px;
+                    min-width: 170px;
+                    color: grey;
+                    border-radius: 4px;
+                    border: grey;
+                    font-size: 18px;
+                }
+                button{
+                    font-size: 18px;
+                    padding: 8px;
+                    background-color: #00b8d9;
+                    color: white;
+                    border-radius: 6px;
+                    margin-left: 8px;
+                    min-width: 170px;
+                }
+            }
+        }
+        
+    }
+
+    //Media Query
+    @media (max-width:542px) {
+        padding: 20px 12px;
+        .newsletter{ 
+            background-repeat: no-repeat;
+            min-height: 300px !important;
+            background-position: 50% 50%;
+            .container{
+                padding: 0 10px;
+                h1{
+                    font-size: 20px;
+                }
+            }
+        }  
+    }
+
+    @media (max-width:768px) {
+        input{
+            display: none;
+        }
+        .container h1{
+            font-size: 14px;
+        }
+    }
+}

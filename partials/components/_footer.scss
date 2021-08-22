@@ -1,0 +1,66 @@
+
+
+//Download Section
+.six{
+    background-color: #fafbfc;
+
+    .container{
+        padding: 20px 45px;
+        @include flex(flex-end,center);
+        #six-info{
+            font-weight: 500;
+            font-size: 19px;
+            margin: 6px 18px;
+        }
+        button{
+            margin: 0 6px;
+        }
+
+    }
+    @media (max-width:768px) {
+        .container{
+            padding: 10px 12px;
+            text-align: center;
+            @include flex(center,center ,column );
+            .button-container{
+                display: flex;
+                width: 100%;
+                button{
+                    width: 50%;
+                    overflow: hidden;
+                    background: none;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+//Footer Section
+footer{
+    min-height: 200px;
+    @include flex(center,center,column);
+    a{
+        color: gray;
+        margin: 0 6px;
+        :hover{
+            color: rgb(87, 87, 87);
+        }
+
+    }
+    .footer-tags{
+        text-align: center;
+        margin: 20px 0;
+    }
+    img{
+        width: 200px;
+        margin: 10px 0;
+    }
+}
